@@ -62,9 +62,6 @@ This dataset contains 200 entries with the following columns:
 ### 3️⃣ Final Customer Segments
 ![Customer Segments](Customer_Segments.png)
 
-### 4️⃣ Cluster Visualization (Colored by K-Means)
-![Customer Clusters](customer_clusters.png)
-
 ---
 
 ## 🧾 Key Learnings
