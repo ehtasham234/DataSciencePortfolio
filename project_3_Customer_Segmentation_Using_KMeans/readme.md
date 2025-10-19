@@ -2,20 +2,28 @@
 
 ## 📘 Overview
 This project applies **K-Means clustering** to segment mall customers based on their **Age**, **Annual Income**, and **Spending Score**.  
-The goal is to identify distinct customer groups for targeted marketing strategies.
+The goal is to identify distinct customer groups for targeted marketing strategies and improved business insights.
 
 ---
 
 ## 🧩 Dataset
-Dataset: [Mall Customers Dataset on Kaggle](https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial)
+**Dataset:** [Mall Customers Dataset on Kaggle](https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial)
+
+This dataset contains 200 entries with the following columns:
+- **CustomerID**
+- **Gender**
+- **Age**
+- **Annual Income (k$)**
+- **Spending Score (1–100)**
 
 ---
 
 ## ⚙️ Methods Used
-- Data preprocessing and scaling using **StandardScaler**
-- **Elbow Method** to determine optimal cluster count
-- **K-Means Clustering** for segmentation
-- Visualization using **Matplotlib** and **Seaborn**
+- **Data Preprocessing** (cleaning, normalization using `StandardScaler`)
+- **Exploratory Data Analysis** with visualizations
+- **Elbow Method** to determine the optimal number of clusters
+- **K-Means Clustering** for customer segmentation
+- **Cluster Profiling** to interpret patterns and marketing potential
 
 ---
 
@@ -31,22 +39,46 @@ Dataset: [Mall Customers Dataset on Kaggle](https://www.kaggle.com/datasets/vjch
 
 ---
 
-## 📈 Visuals
-- `Elbow_Method.png` → Finding optimal number of clusters  
-- `Annual_Income_Spending_Score.png` → Income vs Spending Score  
-- `Customer_Segments.png` → Final segmentation visualization  
-- `customer_clusters.png` → Clustered scatter plot  
+## 🧠 Cluster Insights
+
+| Cluster | Description | Key Traits | Marketing Strategy |
+|:--:|:--|:--|:--|
+| **0** | Older Moderate Spenders | Age ~55, Income ~$47k, Spending ~42 | Retain via loyalty programs |
+| **1** | Young High-Income High-Spenders | Age ~33, Income ~$86k, Spending ~82 | Focus on premium/luxury offers |
+| **2** | Young Low-Income High-Spenders | Age ~26, Income ~$26k, Spending ~75 | Target with trend-based offers |
+| **3** | Young Average Spenders | Age ~27, Income ~$54k, Spending ~41 | Promote general deals and loyalty |
+| **4** | Older High-Income Low-Spenders | Age ~44, Income ~$90k, Spending ~18 | Upsell with personalized offers |
 
 ---
 
-## 🧠 Insights
-- **Cluster 1** → Young, high-income, high spenders → *Premium segment*  
-- **Cluster 2** → Young, low-income, high spenders → *Impulsive buyers*  
-- **Cluster 4** → Older, high-income, low spenders → *Conservative buyers*  
+## 📈 Visual Results
+
+### 1️⃣ Elbow Method — Finding the Optimal Number of Clusters
+![Elbow Method](Elbow_Method.png)
+
+### 2️⃣ Annual Income vs Spending Score
+![Annual Income vs Spending Score](Annual_Income_Spending_Score.png)
+
+### 3️⃣ Final Customer Segments
+![Customer Segments](Customer_Segments.png)
+
+### 4️⃣ Cluster Visualization (Colored by K-Means)
+![Customer Clusters](customer_clusters.png)
+
+---
+
+## 🧾 Key Learnings
+- K-Means effectively groups customers into distinct behavioral segments.  
+- Visualizing clusters helps businesses tailor marketing strategies per group.  
+- Data normalization is critical for accurate cluster separation.  
 
 ---
 
 ## 🚀 Next Steps
-- Try other clustering algorithms like **DBSCAN** or **Hierarchical Clustering**
-- Add customer demographics (e.g., Gender, Profession)
-- Use PCA for dimensionality reduction before clustering
+- Try advanced clustering algorithms: **DBSCAN**, **Gaussian Mixture Models**
+- Perform **PCA** for dimensionality reduction before clustering
+- Build a **dashboard** for interactive segmentation visualization
+
+---
+
+## 📂 Repository Structure
