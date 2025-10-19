@@ -78,4 +78,6 @@ This dataset contains 200 entries with the following columns:
 
 ---
 
-## 📂 Repository Structure
+**Author:** Muhammad Ehtasham Khattak  
+**Tools:** Python, Pandas, Scikit-learn, Matplotlib, Seaborn  
+**Goal:** Practical application of clustering for marketing analytics
